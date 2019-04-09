@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>PRactica02</title>
+    <link rel="stylesheet" href="../CSS/style.css">
+</head>
+<body>
+    <div id="contenido">
+        <div id="caja1">
+            <label id="label" ><b>Ticket</b></label>
+            <input type="text" class="inputa" disabled value="001"><br>
+            <label id="label"><b>Mesa</b></label>
+            <select   id="mesa">
+                    <option value="Mesa1">Mesa1</option>
+                    <option value="Mesa2">Mesa2</option>
+                    <option value="Mesa3">Mesa3</option>
+                    <option value="Mesa4">Mesa4</option>
+                </select><br>
+            <label>Cliente</label>
+            <input type="text" class="input" id="cliente">
+            <label >DNI</label>
+            <input type="text" class="input" id="dni"><br>
+
+            <label>Plato</label>
+            <select  class="inputplato" id="plato">
+                <option value="Cebiche">Cebiche</option>
+                <option value="Causa">Causa</option>
+                <option value="Lomo">Lomo</option>
+                <option value="Bisteck">Bisteck</option>
+            </select>
+            
+            <label>Precio</label>
+            <input type="text" class="inputprecio" id="precio" onchange="validarnumero(this.value, 1);">
+
+            <label>Cantidad</label>
+            <input type="text" class="inputcantidad" id="cantidad" onchange="validarnumero(this.value, 2);"><br>
+
+            <input type="submit" class="inputsubmit" id="add" value="add" onclick="iniciar()">
+        </div>
+
+
+
+        <div caja3>
+            <table id="tabla" border="1" style="margin-top: 10px">
+                <thead>
+                    <tr>
+                        
+                        <th>Ticket</th>
+                        <th>Mesa</th>
+                        <th>Cliente</th>
+                        <th>DNI</th>
+                    </tr>
+
+                </thead>
+                <tbody>
+
+                </tbody>
+            </table>
+        </div>
+
+        <div>
+            <table id="tabla2" border="1" style="margin-top: 10px">
+                <thead>
+                    <tr>
+                        
+                        <th>Nombre</th>
+                        <th>Precio</th>
+                        <th>Cantidad</th>
+                        <th>Importe</th>
+                        <th>Eliminar</th>
+                    </tr>
+                </thead>
+                <tbody>
+
+                </tbody>
+            </table>
+        </div>
+        <div>
+            <label id="pagar"><b>Total a pagar</b></label>
+            <input type="text" id="pagar1" disabled>
+
+        </div>
+
+    </div>
+    
+    <script src="../JS/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,57 @@
+*{
+    margin: 0 auto;
+}
+#contenido{
+    margin-top: 20px;
+    width: 500px;
+    border: 2px solid black;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: right;
+
+}
+.inputa {
+    margin-right: 243px;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+.input{
+    margin-right: 18px;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+
+.inputprecio, .inputcantidad, #plato{
+    margin-top: 20px;
+    width: 95px;
+}
+#plato{
+    height: 25px;
+}
+
+.inputcantidad{
+    margin-right: 20px;
+}
+
+#label{
+    font-size: 20px;
+}
+.inputsubmit{
+    margin-top: 10px; 
+    width: 80px;
+    margin-right: 200px;
+}
+#mesa{
+    margin-top: 10px;
+    height: 25px;
+    width: 160px;
+    margin-right: 243px;
+    margin-left: 22px;    
+}
+#pagar, #pagar1{
+    margin-top: 10px;
+    font-size: 15px;
+    border: solid white;
+    text-align: right;
+    background: white;
+}
